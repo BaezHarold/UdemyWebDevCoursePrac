@@ -1,0 +1,82 @@
+<html>
+    <head>
+
+        <title>Fading Content</title>
+
+        <!--Method to get jQuery w/out downloading anything better when working on production site
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
+        <!--Method to get jQuery working when offline with dowlnoading jQuery file-->
+        <script type="text/javascript" src="jquery.min.js"></script>
+
+        <style type="text/css">
+
+            #p2 {
+                display:none;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <button id="toggle">Toggle FadeOut!</button>  
+
+        <script type="text/javascript">
+
+           /* $("div").click(function() {
+                $(this).fadeOut("slow", function() {
+                    alert("fadeOut has finished");
+                })
+
+                //$(this).hide(); //same as setting display to none
+            })*/
+
+
+            // One Way to have one button make text appear and disappear
+           /* $("#toggle").click(function() {
+
+               if($("#p1").css("display") == "none") //or can do ->> if($("#p1")..is(":visible")) {
+
+                    $("#p1").fadeIn();
+
+               } else {
+                $("#p1").fadeOut();
+               }
+            }) */ 
+
+            // 2nd way to make one button make text appear and disappear
+            var textShowing = true;
+
+            $("#toggle").click(function() {
+
+                if(textShowing) {
+ 
+                     $("#p1").fadeOut(function() {
+
+                        textShowing = false;
+
+                     });
+ 
+                } else {
+
+                    $("#p1").fadeIn(function() {
+
+                        textShowing = true;
+
+                    });
+
+                }
+             })
+        </script>
+    </body>
+</html>

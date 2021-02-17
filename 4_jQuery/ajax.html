@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+        <title>Ajax</title>
+
+        <!--Method to get jQuery w/out downloading anything better when working on production site
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
+        <!--Method to get jQuery working when offline with dowlnoading jQuery file-->
+        <script type="text/javascript" src="jquery.min.js"></script>
+
+        <style type="text/css">
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <p></p>
+
+
+        <script type="text/javascript">
+
+            $.ajax("info.txt")
+                .done(function(data) {
+
+                    $("p").html(data);
+
+                })
+                .fail(function() {
+
+                    alert("Could not get data");
+
+                });
+
+        </script>
+    </body>
+</html>

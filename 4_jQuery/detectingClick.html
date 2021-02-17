@@ -1,0 +1,57 @@
+<html>
+    <head>
+
+        <title>jQuery</title>
+
+        <!--Method to get jQuery w/out downloading anything better when working on production site
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
+        <!--Method to get jQuery working when offline with dowlnoading file-->
+        <script type="text/javascript" src="jquery.min.js"></script>
+
+        <style type="text/css">
+            #circle {
+                height:200px;
+                width:200px;
+                background-color:green;
+                border-radius:50%;
+                margin:10px;
+            }
+
+            .square {
+                height:200px;
+                width:200px;
+                background-color:red;
+                margin:10px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        Hello Person!
+
+        <div id="circle"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+
+
+
+        <script type="text/javascript">
+
+            $("#circle").click(function() {
+
+                alert("circle was clicked");
+
+            })
+
+            $(".square").click(function() {
+
+                alert("A square was clicked");
+
+            })
+
+        </script>
+    </body>
+</html>

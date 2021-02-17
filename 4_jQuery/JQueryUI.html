@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <link href="jqueryui/jquery-ui.css" rel="stylesheet">
+        <script src="jqueryui/jquery-ui.js"></script>
+
+
+        <style type="text/css">
+
+            #drag {
+                width: 200px;
+                height: 200px;
+                padding: 5px;
+            }
+        
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="drag" class="ui-widget-content"> <!--The class makes the widget using jquery ui which is the box-->
+            <p>You can Drag Me!</p>
+        </div>
+
+
+
+
+        <script type="text/javascript">
+
+            $("#drag").draggable();
+           
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Draggable and Resizable</title>
+
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <link href="jqueryui/jquery-ui.css" rel="stylesheet">
+        <script src="jqueryui/jquery-ui.js"></script>
+
+
+        <style type="text/css">
+
+            #drag1 {
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+            }
+
+            #drag2 {
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+            }
+
+            #drag3 {
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+            }
+
+            #resizable { 
+                width: 150px; 
+                height: 150px; 
+                background-color: red;
+                
+            }
+
+            #resizable2 { 
+                width: 150px; 
+                height: 150px; 
+                background-color: aqua;
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="drag1" class="ui-widget-content"> <!--The class makes the widget using jquery ui which is the box-->
+            <p>You can Drag Me anywhere!</p>
+        </div>
+        <div id="drag2" class="ui-widget-content"> <!--The class makes the widget using jquery ui which is the box-->
+            <p>You can Drag Me up and down!</p>
+        </div>
+        <div id="drag3" class="ui-widget-content"> <!--The class makes the widget using jquery ui which is the box-->
+            <p>You can Drag Me left and righ!</p>
+        </div>
+
+        <div id="resizable"></div>
+            
+        <div id="resizable2"></div>
+
+
+        <script type="text/javascript">
+
+            $("#drag1").draggable();
+            $("#drag2").draggable({axis:"y"});
+            $("#drag3").draggable({axis:"x"});
+
+            $("#resizable").resizable({
+                alsoResize: "#resizable2",
+                resize: function(event, ui) {
+                    if ($("#resizable").width() > 300) {
+                        alert("big enough");
+                    }
+                }
+            });
+
+            $("#resizable2").resizable();
+           
+
+        </script>
+    </body>
+</html>

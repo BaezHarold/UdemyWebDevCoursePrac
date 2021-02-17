@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Mini Challenge</title>
+
+        <style>
+            .circle {
+                height:200px;
+                width:200px;
+                border-radius:50%;
+                float:left;
+                margin:50px;
+            }
+
+            #red {
+                background-color:red;
+            }
+
+            #green {
+                background-color:green;
+            }
+
+            #blue {
+                background-color:blue;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="circle" id="red"></div>
+        <div class="circle" id="green"></div>
+        <div class="circle" id="blue"></div>
+
+
+
+        <script type="text/javascript">
+
+            document.getElementById("red").onclick = function() {
+
+                document.getElementById("red").style.display = "none";
+
+            }
+
+            document.getElementById("green").onclick = function() {
+
+                document.getElementById("green").style.display = "none";
+
+            }
+
+            document.getElementById("blue").onclick = function() {
+
+                document.getElementById("blue").style.display = "none";
+
+            }
+
+        </script>
+    </body>
+</html>

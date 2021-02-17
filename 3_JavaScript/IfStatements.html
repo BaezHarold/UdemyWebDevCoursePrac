@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>Magic Word Guessing</title>
+
+    </head>
+
+    <body>
+
+        <h1>What Is The Magic Word!</h1>
+
+        <input id="userInput" type="text">
+        <button id="guess">Click to Guess!</button>
+
+        <script type="text/javascript">
+
+            var magicWord = "Excelsior";
+
+            document.getElementById("guess").onclick = function() {
+
+                var input = document.getElementById("userInput").value;
+
+                if(input == magicWord) {
+                    alert("Correct! Magic Word is Excelsior!");
+                } else alert("Wrong. Try Again!")
+            }
+
+        </script>
+    </body>
+</html>

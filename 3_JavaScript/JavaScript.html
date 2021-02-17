@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+
+    <body>
+
+        <!--This shows how to use inline JavaScript(not really recomended)
+        <button onclick="alert('Hello')">Click Me!</button>-->
+
+
+        <p id="text">Hello World</p>
+        <button id="myButton">Change Text</button>
+
+        <p id="textTwo">JavaScript is ...</p>
+        <button id="myButton2">Append Text</button>
+
+        <p id="textThree"></p>
+        <button id="myButton3">Make Text Appear</button>
+
+        <p id="textFour">Style Text</p>
+        <button id="myButton4">Click to style above text!</button>
+
+        <!--This shows how to setup internal JavaScript-->
+        <script type="text/javascript">
+            
+            // This code is used to grab the element from the HTML and then change it
+            //document.getElementById("text").innerHTML = "Hello Harold";
+
+            document.getElementById("myButton").onclick = function() {
+
+                document.getElementById("text").innerHTML = "Hello Harold";
+
+            }
+
+            document.getElementById("myButton2").onclick = function() {
+
+                document.getElementById("textTwo").innerHTML = "I think " + document.getElementById("textTwo").innerHTML + " awesome";
+
+            }
+
+            document.getElementById("myButton3").onclick = function() {
+
+                document.getElementById("textThree").innerHTML = "<h1>Hello My Friend!</h1>";
+
+            }
+
+            document.getElementById("myButton4").onclick = function() {
+
+                document.getElementById("textFour").style.color = "red"; //for font size do fontSize not font-size
+                // to make the text disappear will do style.display = "none"
+
+            }
+        </script>
+    </body>
+</html>

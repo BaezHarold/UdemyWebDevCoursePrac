@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>First Webpage</title>
+    </head>
+    <body>
+        <h1 id="top">This is a big header</h1>
+        <h2>This is quite a big header</h2>
+        <!--this can go all the way to h6-->
+
+        <p>This is some <strong>bold</strong> text</p>
+        <p>Here is some <em>italic</em> text</p>
+        <p>Here is some <ins>underlined</ins> text</p>
+        <hr>
+        <p>Here is some <sup>superscript</sup> text</p>
+        <p>Here is some <sub>subscript</sub> text</p>
+        <p>Here is some <del>deleted</del> text</p>
+        <p>Here is some text <br> with a line break</p>
+
+        <!--UnorderedList-->
+        <ul>
+            <li><strong>Harold</strong></li>
+            <li><em>Mami</em></li>
+            <li>Tracy</li>
+            <li>Julio</li>
+        </ul>
+
+        <!--OrderedList-->
+        <ol start="1"> <!--Can also put reversed, and type to change type of bulletpoints-->
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+        </ol>
+
+        <img src="homer.png" width="25%" align="left"> <!--Can also link to a website but not recommended-->
+
+        <br>
+
+        <!--Forms; Used when user data wants to be collected; or setup login-->
+        <form>
+            <p>Username: <input type="text" placeholder="your username"></p>
+
+            <p>Stay logged in: <input type="checkbox" checked></p>
+
+            <p>Under 18: <input type="radio" name="age" value="u18"></p>
+            <p>Over 18: <input type="radio" name="age" value="o18"></p>
+
+            <p>Favorite Food</p>
+            <select>
+                <option>Pizza</option> <!--Selected is used to set default if you dont want the first one to be default-->
+                <option selected>Burger</option>
+                <option>Ice Cream</option>
+            </select>
+
+            <p><input type="submit" value="Click Me"></p>
+        </form>
+
+        <br>
+
+        <!--Tables-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Favorite <br> Color</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> <!--Table Row-->
+                    <td>J</td> <!--Table data-->
+                    <td>Blue</td>
+                </tr>
+                <tr>
+                    <td>T</td>
+                    <td>Purple</td>
+                </tr>
+                <tr>
+                    <td>H</td>
+                    <td>Red</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>Green</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--Links-->
+        <p><a href="http://www.google.com">Click me to go to Google</a></p>
+
+        <a href="https://savageplanetgame.com/"><img src="journeytothesavageplanet.png" width="25%"></a> <!--Put a link on an image-->
+
+        <p><a href="Helloworld.html">Hello World!</a></p>
+
+        <a href="#top">Back to Top</a> <!--Anchor Links, Linking within a page-->
+
+        <br>
+        <br>
+
+        <!--HTML Entities; used to display reserved characters in HTML-->
+        &lt;a&gt; <!--This can be used when trying to display a character that is reserved or other symbols-->
+        <p>The less and greater sign is reserved used HTML Entities in order to show it</p>
+
+        <br>
+
+        <!--Iframes; Used to include content from other sites on your own; can also be from your own site-->
+        <iframe src="https://savageplanetgame.com/"></iframe>
+
+        <iframe src="Helloworld.html"></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hb6itWsCL1Q" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+
+        <div style="width: 100px; height: 100px; background-color: blue"></div>
+
+    </body>
+</html>

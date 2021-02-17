@@ -1,0 +1,61 @@
+<html>
+    <head>
+
+        <title>Change Webiste Style</title>
+
+        <!--Method to get jQuery w/out downloading anything better when working on production site
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
+        <!--Method to get jQuery working when offline with dowlnoading jQuery file-->
+        <script type="text/javascript" src="jquery.min.js"></script>
+
+        <style type="text/css">
+            #circle {
+                height:200px;
+                width:200px;
+                background-color:green;
+                border-radius:50%;
+                margin:10px;
+            }
+
+            .square {
+                height:200px;
+                width:200px;
+                background-color:red;
+                margin:10px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="circle"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+
+        
+
+        
+
+        <script type="text/javascript">
+
+            $("div").click(function() {
+
+              //$(this).css("display", "none"); //this will allow for the element that we click to disappear
+
+              //alert($("body").css("width"));
+
+              if($(this).attr("id") == "circle") {
+
+                alert("You clicked on a Circle");
+
+              } else {
+                  alert("You clicked on a Square");
+              }
+
+            })
+
+        </script>
+    </body>
+</html>

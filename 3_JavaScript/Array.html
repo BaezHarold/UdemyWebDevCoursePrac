@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+
+
+
+        <script type="text/javascript">
+
+            // Way to setup an array and store values
+            var myArray = new Array();
+            myArray[0] = "pizza";
+            myArray[1] = "chocolate";
+
+            // Another way to set up an array and store values
+            var tweets = ["Morning Everybody", "Need Coffee"];
+
+            tweets.push("Work is Boring!"); //adding to array
+
+            // splice can be to delete as well as to add to array
+            tweets.splice(1,1); //delete from array need to specify where to start and how many items to delete from that start point
+            
+            tweets.splice(1,0, "Cornflake for brekfast"); //add new entry after the second value in array
+            tweets.splice(1,1, "Coffee no bueno", "I like hot chocolate"); //this replaces the value at 1 with new item and can add as many more entries with commas to seperate
+            
+            console.log(tweets);
+        </script>
+    </body>
+</html>

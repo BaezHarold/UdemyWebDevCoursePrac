@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>While Loops</title>
+
+    </head>
+
+    <body>
+
+        <p>Computer Will Guess How Many Fingers You Have Up!</p>
+        
+        <select id="myNumber">
+
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+
+        </select>
+
+        <button id="guess">Guess!</button>
+
+        <script type="text/javascript">
+
+            document.getElementById("guess").onclick = function() {
+
+                var myNumber = document.getElementById("myNumber").value;
+
+                var gotIt = false;
+                var numberOfGuesses = 1;
+
+                while(gotIt == false) {
+
+                    var guess = Math.floor(Math.random()*6);
+
+                    if(guess == myNumber) {
+                        //Computer is correct
+                        gotIt = true;
+                        alert("Got it! It was a " + guess + ". Took " + numberOfGuesses + " guesses!");
+
+                    } else {
+                        //Computer is Wrong
+                        numberOfGuesses++;
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

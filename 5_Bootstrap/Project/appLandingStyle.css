@@ -1,0 +1,53 @@
+body {
+    position: relative;
+    background-color: gainsboro;
+}
+
+#home {
+    background-image: url("Img/aurora.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+}
+
+#email {
+    width: 400px;
+}
+
+hr {
+    border-top: solid white;
+}
+
+.aboutTop {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: large;
+}
+
+#about {
+    padding-bottom: 100px;
+}
+
+i {
+    padding-right: 10px;
+}
+
+#download {
+    background-color: forestgreen;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.downloadText {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 25px;
+    color: white;
+}
+
+#download img {
+    padding-bottom: 10px;
+    width: 350px;
+}
